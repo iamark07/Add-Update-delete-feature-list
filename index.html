@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&family=Great+Vibes&family=Lobster+Two&family=Mooli&family=PT+Sans+Narrow&family=Pacifico&family=Poppins:wght@300&family=Rajdhani:wght@600&family=Roboto:wght@300&family=Teko&display=swap"
+        rel="stylesheet">
+
+    <!-- rimix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <main>
+        <div class="admin_container">
+            <h1>Admin Dashboard</h1>
+            <div class="list_container">
+                <div class="lists">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Code No.</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Developer</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="add_update_form">
+                    <form action="" id="myForm">
+                        <i class="ri-close-circle-line form_close_icon"></i>
+                        <div class="input_box code_no_wrapper">
+                            <input type="text" class="input" id="code" placeholder="Enter Code">
+                            <p class="input_error"></p>
+                        </div>
+                        <div class="input_box name_wrapper">
+                            <input type="text" class="input" id="name" placeholder="Enter Name">
+                            <p class="input_error"></p>
+                        </div>
+                        <div class="input_box phone_wrapper">
+                            <input type="text" class="input" id="num" placeholder="Enter Phone" >
+                            <p class="input_error"></p>
+                        </div>
+                        <div class="input_box gender_wrapper">
+                            <select id="gen"> 
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input_box developer_wrapper">
+                            <input type="text" class="input" id="dev" placeholder="Enter Developer">
+                            <p class="input_error"></p>
+                        </div>
+                        <button class="input_btn submit">Submit</button>
+                        <button class="input_btn edit">Edit</button>
+                    </form>
+                </div>
+                <div class="add_list_btn">
+                    <i class="ri-add-line add_btn"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
