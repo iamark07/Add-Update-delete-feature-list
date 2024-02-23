@@ -44,7 +44,7 @@ main {
     width: fit-content;
 }
 
-.lists {
+.list_wrapper{
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -109,9 +109,10 @@ main {
 
 .add_update_form form {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     width: 800px;
     gap: 10px;
+    justify-content: center;
     position: relative;
 }
 
@@ -170,12 +171,14 @@ main {
 .input_box select{
     width: 100%;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px 10px;
     height: 100%;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .submit, .edit{
     cursor: pointer;
+    padding: 15px 10px;
 }
 
 .add_list_btn {
@@ -192,5 +195,115 @@ main {
     place-items: center;
     font-size: 20px;
     cursor: pointer;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .list_wrapper{
+        padding: 25px;
+    }
+
+    .lists{
+        width: 650px;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+
+    .lists::-webkit-scrollbar{
+        background-color: rgb(233, 233, 233);
+        border-radius: 8px;
+        height: 10px;
+    }
+
+    .lists::-webkit-scrollbar-thumb{
+        background-color: rgb(209, 209, 209);
+        border-radius: 8px;
+    }
+    
+    .add_update_form form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:767px) {
+    .admin_container h1 {
+        font-size: 30px;
+    }
+
+    .list_wrapper{
+        padding: 20px;
+    }
+
+    .lists{
+        width: 400px;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+
+    .lists::-webkit-scrollbar{
+        background-color: rgb(233, 233, 233);
+        border-radius: 8px;
+        height: 10px;
+    }
+
+    .lists::-webkit-scrollbar-thumb{
+        background-color: rgb(209, 209, 209);
+        border-radius: 8px;
+    }
+
+    .add_update_form form {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 400px;
+    }
+
+    .add_update_form form .form_close_icon{
+        right: -10px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:499px) {
+    .admin_container{
+        padding: 0px 20px;
+    }
+    
+    .admin_container h1 {
+        font-size: 25px;
+    }
+
+    .list_wrapper{
+        padding: 20px;
+    }
+
+    .lists{
+        width: 300px;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+
+    .lists::-webkit-scrollbar{
+        background-color: rgb(233, 233, 233);
+        border-radius: 8px;
+        height: 10px;
+    }
+
+    .lists::-webkit-scrollbar-thumb{
+        background-color: rgb(209, 209, 209);
+        border-radius: 8px;
+    }
+
+    .add_update_form form {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 300px;
+    }
+
+    .add_update_form form .form_close_icon{
+        right: -10px;
+    }
+
+
 }
 
