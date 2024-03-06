@@ -95,7 +95,7 @@ $(document).ready(function () {
             let create_tr = $("<tr>"); // creating tr tag
 
             if (code_input.length >= 1 && !isNaN(code_input) && code_input.length <= 5) { //check code input text box is >= 1
-                let create_td = $("<td>") // creating td tag
+                let create_td = $("<td>"); // creating td tag
                 create_tr.append(create_td); //td tag inside the tr tag 
                 let td = $(create_td); // select td tag
                 td.addClass("code"); // add class in code input text box
